@@ -1,0 +1,98 @@
+:root {
+    --primary-color:rgb(202, 132, 1);
+    --secondary-color:white;
+    --my-font-color:grey;
+    --primary-font-family:arial;
+}
+
+body {
+    background-color:var(--primary-color);
+    font-family:var(--primary-font-family);
+    color:var(--secondary-color);
+    display:flex;
+    flex-direction:column;
+    flex-wrap:nowrap;
+    justify-content:center;
+    align-content:center;
+}
+
+/* ================ HEADER =============== */
+header{
+    text-align:center;
+    margin:20px;
+}
+
+.title {
+    cursor:default;
+    text-shadow:2px 2px 8px white;
+    transition:all 0.5s ease;
+}
+
+/* adds shadow effect when hovered over */
+.title:hover {
+    text-shadow:6px 6px 15px white;
+    transform:scale(1.2);
+}
+
+/* adds content right after the title */
+.title::after {
+    content:"📱";
+}
+
+/* ================ FORM =============== */
+form {
+    text-align:center;
+    padding:20px;
+}
+
+.input {
+    border-radius:5px;
+    border-color:white;
+    transition:transform 0.5s ease;
+}
+
+/* adds effects when the ability to type is triggered */
+.input:focus{
+    background-color:var(--primary-color);
+    transform:scale(1.1);
+    color:white;
+}
+/* adds effects when the input is correct */
+.input:valid {
+    border-color: blue;
+    background-color:aqua;
+}
+
+/* adds effects when the input is not filled out or incorrect */
+.input:invalid {
+    border-color:red;
+}
+
+.button {
+    transition:transform 0.5s ease;
+}
+
+/* adds effects when the button is clicked on */
+.button:active {
+    border-color:blue;
+}
+
+/* adds effects when the button is hovered over */
+.button:hover{
+    background-color:grey;
+    transform:scale(1.1);
+}
+
+/* ================ FOOTER =============== */
+footer{
+    text-align:center;
+    padding:20px;
+}
+
+/* adds content right before the footer */
+footer::before{
+    content:"***";
+}
+
+
+
