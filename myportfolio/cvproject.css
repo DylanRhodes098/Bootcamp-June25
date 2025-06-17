@@ -1,0 +1,70 @@
+.main {
+    border:solid;
+    max-width:80%;
+    max-height:80%;
+    padding:20px;
+    position:relative;
+    left:100px;;
+    background-color:grey;
+    display:grid;
+    gap:10px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+
+    grid-template-areas:
+    "image header"
+    "contacts proffesionalsummary"
+    "skills workexperience"
+    ". education"
+    ". certifications"
+    ". references";
+}
+
+.left {
+    background-color:grey;
+}
+
+.image{
+    grid-area:image;
+    display:flex;
+    flex-shrink:1;
+    background-color:brown;
+}
+
+.contacts{
+    grid-area:contacts;
+    background-color:brown;
+}
+
+.skills {
+    grid-area:skills;
+    background-color:brown;
+}
+
+.proffesionalsummary {
+    grid-area:proffesionalsummary;
+    background-color:brown;
+}
+
+.workexperience {
+    grid-area:workexperience;
+    background-color:brown;
+}
+
+.education {
+    grid-area:education;
+    background-color:brown;
+}
+
+.certifications {
+    grid-area:certifications;
+    background-color:brown;
+}
+
+.referencences {
+    grid-area:references;
+    background-color:brown;
+}
+
+
+
