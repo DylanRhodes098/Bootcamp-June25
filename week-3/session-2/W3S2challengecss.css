@@ -1,8 +1,11 @@
 .bg-primary {
-    background-color:blue !important;
-    color:yellow !important;
+    background-color:black !important;
 }
 
-.text-dark {
-    color:black !important;
+.text-light {
+    color:aqua !important;
+}
+
+.btn-primary {
+margin:10px;
 }

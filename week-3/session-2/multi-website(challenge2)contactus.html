@@ -7,96 +7,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body class="p-4">
 <header class="container-fluid">
-    <nav class="navbar navbar-dark navbar-expand-md">
-        <div clas="row w-100">
-            <div class="col-md-3"></div>
-        <img class="navbar-brand" src="https://marketplace.canva.com/EAGM_nMYwXY/2/0/1600w/canva-black-and-blue-illustrative-health-and-fitness-sporting-club-logo-UzMNmj-BlkM.jpg" height="50px" width="50px">
+    <section class="navbar nav-dark nav-expand-md bg-primary">
+        <div class="container-fluid">
+            <div class="row w-100 align-items-center">
+                <div class="col-md-3">
+                <a class="nav-brand" href="#">
+                    <img src="https://marketplace.canva.com/EAGM_nMYwXY/2/0/1600w/canva-black-and-blue-illustrative-health-and-fitness-sporting-club-logo-UzMNmj-BlkM.jpg" height="50px" width="50px">
         </div>
-        <div class="col-md-9">
-            <ul class="navbar-nav"></ul>
-            <div class="col-md-3">
-        <li class="nav-item text-dark"><a class="nav-link" href="Home">home</a></li>
-    </div>
-    <div class="col-md-3">
-        <li class="nav-item text-dark"><a class="nav-link" href="about">about</a></li>
-    </div>
-    <div class="col-md-3">
-        <li class="nav-item text-dark"><a class="nav-link" href="contactus">contact</a></li>
-    </div>
+        <div class="col-md-6">
+        <ul class="navbar-nav w-100 bg-primary flex-row justify-content-around">
+            <li class="nav-item px-3">
+                <a class="nav-link text-light">Home</a></li>
+                <li class="nav-item px-3">
+                    <a class="nav-link text-light">About us</a></li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link text-light">Contact us</a></li>
+        </ul>
     </div>
     </div>
-    </div>
-    </ul>
-    </nav>
-</header>
-
-<main>
-    <section class="bannercontactus">
-        <div class="ban3">
-        <h1 class="contactustitle">HOW CAN WE HELP?</h1>
     </div>
     </section>
+</header>
 
-    <section class="contactform">
-        <div class="CF formdetails">
-            <for class="theform">
-                <label for="firstname">First Name: </label><br>
-                <input class="inputtheform" type="text" id="firstname" name="firstname" required><br><br>
+  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#basicModal">
+    How can we help?
+  </button>
 
-                <label for="lastname">Last Name: </label><br>
-                <input class="inputtheform" type="text" id="lastname" name="lastname" required><br><br>
-                    
-                <label for="email">Email Address: </label><br>
-                <input class="inputtheform" type="email" id="email" name="email" required><br><br>
-
-                <label for="Mobile">Mobile Number: </label><br>
-                <input class="inputtheform" type="Mobile" id="Mobile" name="mobile" required><br><br>
-
-                <label for="message">How can we help? </label><br>
-                <textarea class="inputtheform" id="message" name="how can we help?" cols="50" rows="10"required></textarea><br><br>
-
-                <button class="quirybutton" type="submit">Submit</button>
-            </form>
+  <div class="modal fade" id="basicModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h1>Request an issue and we'll get back to you!</h1>
         </div>
-            <div class="CF fitnessdetails">
-                <h1 class="formdetailstitle">Email: </h1>
-                </p>support@fitness.com </p><br><br>
-                <h1 class="formdetailstitle">Call: </h1>
-                <p>07714589120 </p><br><br>
-                <h1 class="formdetailstitle">Address:</h1>
-                <p>Town Centre House<br>Merrion Centre<br>Leeds<br>United Kindgom<br>LS2 8LY</p>
+      
+        <div class="modal-body">
+            <div class="CF formdetails">
+                <for class="theform">
+                    <label for="firstname">First Name: </label><br>
+                    <input class="inputtheform" type="text" id="firstname" name="firstname" required><br><br>
+    
+                    <label for="lastname">Last Name: </label><br>
+                    <input class="inputtheform" type="text" id="lastname" name="lastname" required><br><br>
+                        
+                    <label for="email">Email Address: </label><br>
+                    <input class="inputtheform" type="email" id="email" name="email" required><br><br>
+    
+                    <label for="Mobile">Mobile Number: </label><br>
+                    <input class="inputtheform" type="Mobile" id="Mobile" name="mobile" required><br><br>
+    
+                    <label for="message">How can we help? </label><br>
+                    <textarea class="inputtheform" id="message" name="how can we help?" cols="50" rows="10"required></textarea><br><br>
+    
+                    <button class="quirybutton" type="submit">Submit</button>
+                </form>
             </div>
-        </section>
-</main>
+        </div>
+        
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div><br><br>
 
-    <footer>
-        <div class="links gyms">
-            <p>Memberships</p>
-            <p>Classes</p>
+  <div class="accordion" id="basicAccordion">
+    
+    <section class="Myaccordion">
+        <h1>CONTACT DETAILS ↓</h1>
+    <!-- Accordion Item 1 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+          Email
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#basicAccordion">
+        <div class="accordion-body">
+         <p>support@fitness.com</p>
         </div>
-        <div class="links assistance">
-            <p>Contact Us</p>
-            <p>Facebook</p>
-            <p>Twitter</p>
-            <p>Instagram</p>
-            <p>Linkedin</p>
+      </div>
+    </div>
+
+    <!-- Accordion Item 2 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+          Call
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#basicAccordion">
+        <div class="accordion-body">
+         <p>07714589120</p>
         </div>
-        <div class="links company">
-            <p>About Us</p>
-        </div>
-        <div class="links termsconditions">
-            <p>Terms & Conditions</p>
-            <p>Cookies</p>
-            <p>Gym Rules</p>
-        </div>
-    </footer>
+      </div>
+    </div>
+
+    <div class="accordian-item">
+        <h1 class="accordian-header" id=headingthree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethree">
+            Address
+        </button>
+    </h1>
+    <div id="collapsethree" class="accordian-collapse collapse" dtata-bs-parent="#basicaccrodion">
+    <div class="accordion-body">
+        <p>Town Centre House
+            Merrion Centre
+            Leeds
+            United Kindgom
+            LS2 8LY</p>
+     </div>
+    </div>
+  </div>
+</section><br><br>
+
         <div class="limited">
             <p>© Fitness Limited
                 Registered in England No: 6690189 Reg. Office: Pure Gym Ltd, Town Centre House, Merrion Centre, Leeds LS2 8LY</p>
         </div>
 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>
